@@ -1,58 +1,20 @@
-
 <html>
 <header>
-<title> Game-guessing</title>
+    <title> Game-guessing</title>
+    <link src="assets/css/style.css">
 </header>
 
 <body>
     <p id="greeting">Welcome!. Please choose a letter from keyboard. </p>
     <p id="letter-chosen"></p>
-    <span id="user-score">0</span>:<span id="computer-score">0</span>
+    <span id="user-score">0</span>
+
+    <input type="text" onkeyup="handleKeyup(event);">guess here </input>
+
+    <!-- import the javascript -->
+    <script src="assets/javascript/app.js"></script>
+
    
-    <input type="text" onkeypress="pressKey(key)">
-    
- <script>
-
-const winCounter = 0
-const lostCounter = 0
-const userScore_span=document.getElementById("user-score");
-const computerScore_span=document.getElementById("computer-score");
-
-
-function pressKey(key){
-var letterChosen = document.getElementById("letter-chosen");
-letterChosen.innerText = letterChosen.innerText + event.key;
-console.log(presskey(key));
-} 
-
-
-
-
-var computerLetter = ["a","b","c","d","e","f","g","h","i","j",
-"k","l", "m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-
-function randomLetters(){
-return computerLetter [Math.floor(Math.random()*computerLetter.length)];}
-
-console.log(randomLetters());
-
-
-function game(){
-    switch (RandomLetters + presskey);
-    
-       
-       }
-
-       
-}
-
-
-
-
-
-
-
-
-
-    </script>
 </body>
+</html>
+
