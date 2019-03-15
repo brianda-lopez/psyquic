@@ -1,13 +1,13 @@
-var winCounter = 0
-var lossCounter = 0
-var guessCount;
-var guessArray;
+var winCounter = 0;
+var lossCounter = 0;
+var guessCount = 10;
+var guessArray =[];
 var RandomLetter;
 var alphabetOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
     "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 
-function handlekeyup (event){
+function handleKeyup(event){
     console.log(event.key);
     var letterChosen = event.key;
     
