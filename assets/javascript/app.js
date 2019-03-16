@@ -81,8 +81,7 @@ function handleKeyup(event){
         
         
         
-        var 
-        resetStart = function(){
+        var resetStart = function(){
         
         // reset the guessCount, 
         
@@ -101,6 +100,9 @@ function handleKeyup(event){
         console.log(RandomLetter);
         
         }
+        
+        resetStart();
+
         
 
     
