@@ -1,22 +1,81 @@
-<html>
-<header>
-    <title> Game-guessing</title>
-    <link src="assets/css/style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-</header>
+<head>
+    <meta charset="UTF-8">
+    <title>HANGMAN</title>
+    <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+
 
 <body>
-        
-    <p id="greeting">Welcome!. Please choose a letter from keyboard. </p>
-    <p id="letter-chosen"></p>
-    <span id="user-score">0</span><span id="computer-score"></span>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Word Guess!</h1>
+        </div>
 
-    <input type="text" onkeyup="handleKeyup(event);">guess here </input>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Guess the word by guessing letters. Hint: words are fruits!</h2>
+                <!-- <<div class="panel-body">
+                    <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+                </div> -->
+            </div>
+        </div>
 
-    <!-- import the javascript -->
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Word to Guess</h3>
+                <div class="panel-body">
+                    <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Wrong Guesses: <span id="wrongGuesses"></span>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Guesses Left: <span id="numGuesses"></span>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Win Counter: <span id="winCounter"></span>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Loss Counter: <span id="lossCounter"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    </div>
+
+    <!-- Link to JavaScript-->
     <script src="assets/javascript/app.js"></script>
 
-   
 </body>
-</html>
 
+</html>
